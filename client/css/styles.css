@@ -1,13 +1,24 @@
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
-:root {
+/* :root {
   --color-primary: #1D4ED8;
   --color-accent: #FACC15;
   --color-dark-bg: #1d2d44;
   --color-light-bg: #F9FAFB;
   --color-text: #1F2937;
   --color-muted: #6B7280;
+} */
+
+:root {
+  --color-primary: #1D4ED8;
+  --color-accent: #FACC15;
+  --color-dark-bg: #1d2d44;
+  --color-light-bg: #F9FAFB;
+  --color-text: #F9FAFB;
+  --color-muted: #94A3B8;
+  --color-input-bg: #243b5e;
+  --color-border: #334155;
 }
 
 * {
@@ -211,7 +222,7 @@ nav a:hover {
 .section-title {
   font-size: 2rem;
   font-weight: 700;
-  color: var(--color-text);
+  color: var(--color-primary);
   margin-bottom: 1rem;
 }
 
@@ -291,6 +302,7 @@ nav a:hover {
   font-size: 2rem;
   margin-bottom: 2rem;
   font-weight: 700;
+  color: var(--color-primary);
 }
 
 .circle-stats {
@@ -484,6 +496,155 @@ nav a:hover {
   text-align: right;
   /* Optional: you can add margin-top if you want a little spacing */
   margin-top: auto;
+}
+
+/* CONTACT FORM */
+.testimonials-section {
+  background: #f5f7fa;
+  padding: 4rem 1rem;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+}
+
+.testimonials-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  color: #1D4ED8; /* Using your primary color */
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 6px 18px rgba(29, 78, 216, 0.15);
+  display: flex;
+  flex-direction: column;
+  /* Removed justify-content: space-between to fix uneven height issue */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(29, 78, 216, 0.3);
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #444;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.testimonial-author {
+  font-weight: 600;
+  color: #1D4ED8;
+  font-size: 0.95rem;
+  text-align: right;
+  /* Optional: you can add margin-top if you want a little spacing */
+  margin-top: auto;
+}
+
+/* CONTACT FORM */
+.contact-section {
+  background: var(--color-dark-bg);
+  color: var(--color-text);
+  padding: 4rem 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 2.25rem;
+  margin-bottom: 2.5rem;
+  color: var(--color-text);
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full-width {
+  flex: 1 0 100%;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--color-muted);
+}
+
+input,
+select {
+  padding: 0.75rem 1rem;
+  background-color: var(--color-input-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: var(--color-text);
+}
+
+input::placeholder,
+select::placeholder {
+  color: #94a3b8;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.3);
+}
+
+.submit-button {
+  padding: 0.9rem 2rem;
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+  background: #163ea6;
 }
 
 /* FOOTER */
