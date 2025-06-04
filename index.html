@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="client/css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="client/css/styles.css" />
   <title>Home | Righteous Card Solutions</title>
 </head>
 <body>
@@ -49,35 +49,99 @@
         robust, secure solutions for high-risk merchants.
       </p>
       <div class="partner-logos">
-        <img src="client/images/smarttab.png" alt="Partner 1">
-        <img src="client/images/sumUp.png" alt="Partner 2">
-        <img src="client/images/smarttab.png" alt="Partner 3">
-        <img src="client/images/sumUp.png" alt="Partner 4">
+        <img src="client/images/smarttab.png" alt="Partner 1" />
+        <img src="client/images/sumUp.png" alt="Partner 2" />
+        <img src="client/images/smarttab.png" alt="Partner 3" />
+        <img src="client/images/sumUp.png" alt="Partner 4" />
       </div>
     </div>
   </section>
 
-  <!-- Other content remains unchanged, but all image paths should follow the same "client/images/..." convention -->
+  <!-- All remaining sections stay the same — no path errors in content -->
+  <!-- Just make sure all img src and stylesheet/script links are fixed the same way -->
 
-  <section class="about-section" id="about">
-    <div class="about-container">
-      <div class="about-text">
-        <h2>Secure Payments, Build Trust, Always</h2>
-        <h3 class="highlight">Righteous</h3>
-        <p>
-          Our high-risk payment solutions provide secure and reliable transactions that empower your business to operate with confidence.
-        </p>
-        <p>
-          By partnering with trusted high-risk payment processors, we ensure your payments are protected, your customers feel secure, and your business can thrive — Always Righteous.
-        </p>
-      </div>
-      <div class="about-image">
-        <img src="client/images/other-about.avif" alt="Secure payments concept" />
-      </div>
+  <!-- Add your other sections here... -->
+
+  <section class="contact-section" id="contact">
+    <div class="contact-container">
+      <h2 class="form-title">Fill out this form to Get Started</h2>
+      <form class="contact-form" action="https://formspree.io/f/xwpbpoeq" method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="first-name">First name*</label>
+            <input type="text" id="first-name" name="first-name" required>
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last name*</label>
+            <input type="text" id="last-name" name="last-name" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Phone*</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="company">Company Name*</label>
+            <input type="text" id="company" name="company" required>
+          </div>
+          <div class="form-group">
+            <label for="entity">Entity Type*</label>
+            <input type="text" id="entity" name="entity" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group full-width">
+            <label for="industry">Industry*</label>
+            <input type="text" id="industry" name="industry" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group full-width">
+            <label for="operation-time">How long has the business been in operation?*</label>
+            <input type="text" id="operation-time" name="operation-time" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group full-width">
+            <label for="accepting-payments">Is the business currently accepting credit card payments?*</label>
+            <select id="accepting-payments" name="accepting-payments" required>
+              <option value="">Select one</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group full-width">
+            <label for="website">Website</label>
+            <input type="url" id="website" name="website">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <button type="submit" class="submit-button">Submit</button>
+        </div>
+      </form>
     </div>
   </section>
 
-  <!-- At the end of the file -->
+  <footer>
+    <p>&copy; 2025 Righteous Card Solutions</p>
+  </footer>
+
   <script src="client/js/index.js"></script>
 </body>
 </html>
