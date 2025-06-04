@@ -1,14 +1,9 @@
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
-/* :root {
-  --color-primary: #1D4ED8;
-  --color-accent: #FACC15;
-  --color-dark-bg: #1d2d44;
-  --color-light-bg: #F9FAFB;
-  --color-text: #1F2937;
-  --color-muted: #6B7280;
-} */
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
   --color-primary: #1D4ED8;
