@@ -1,0 +1,371 @@
+/* Coaching Page Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+  --color-primary: #1D4ED8;
+  --color-accent: #FACC15;
+  --color-dark-bg: #1d2d44;
+  --color-light-bg: #F9FAFB;
+  --color-text: #F9FAFB;
+  --color-muted: #94A3B8;
+  --color-input-bg: #243b5e;
+  --color-border: #334155;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: var(--color-light-bg);
+  color: var(--color-text);
+}
+
+/* Header & Navbar */
+header {
+  background-color: var(--color-dark-bg);
+  padding: 1rem 0;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav a {
+  color: var(--color-light-bg);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--color-primary);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.hamburger .bar {
+  width: 30px;
+  height: 4px;
+  background-color: var(--color-light-bg);
+  border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: var(--color-primary);
+  color: var(--color-light-bg);
+  padding: 5rem 2rem;
+  width: 100%;
+}
+
+.hero-content {
+  max-width: 900px;
+  padding: 1rem;
+  flex: 1 1 400px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background-color: var(--color-accent);
+  color: var(--color-dark-bg);
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: var(--color-light-bg);
+}
+
+.hero-image {
+  flex: 1 1 400px;
+  text-align: center;
+  padding: 1rem;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+/* Coaching Benefits */
+.coaching-benefits {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.coaching-benefits h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--color-primary);
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.benefit-card {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+}
+
+.benefit-card h3 {
+  font-size: 1.25rem;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.benefit-card p {
+  color: var(--color-muted);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* CTA Section */
+.cta-section {
+  background: var(--color-dark-bg);
+  color: white;
+  padding: 4rem 1.5rem;
+  /* text-align: center; */
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #e5e7eb;
+  text-align: center;
+}
+
+.cta-center {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.cta-button:hover {
+  background-color: #fbe798;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  background-color: var(--color-dark-bg);
+  color: var(--color-light-bg);
+  font-size: 0.875rem;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 1.5rem;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    padding: 0.75rem 1.5rem;
+  }
+
+  .hero-image {
+    margin-top: 2rem;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--color-dark-bg);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* CONTACT FORM */
+.contact-section {
+  background: var(--color-dark-bg);
+  color: var(--color-text);
+  padding: 4rem 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 2.25rem;
+  margin-bottom: 2.5rem;
+  color: var(--color-text);
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full-width {
+  flex: 1 0 100%;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--color-muted);
+}
+
+input,
+select {
+  padding: 0.75rem 1rem;
+  background-color: var(--color-input-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: var(--color-text);
+}
+
+input::placeholder,
+select::placeholder {
+  color: #94a3b8;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.3);
+}
+
+.submit-button {
+  padding: 0.9rem 2rem;
+  background: var(--color-accent);
+  color: black;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+  background: var(--color-light-bg);
+}
+
