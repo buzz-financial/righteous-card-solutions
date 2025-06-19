@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="https://formspree.io/f/your-id" method="POST">
+      <h2>New Merchant Info Form</h2>
+      <p>
+        This form includes information critical to the preparation process, so
+        that setup goes smoothly. Please try to provide the most accurate info,
+        even if you don't have specifics.
+      </p>
+
+      <label for="email">Email*</label>
+      <input type="email" id="email" name="email" required />
+
+      <fieldset>
+        <legend>Business Type*</legend>
+        <label
+          ><input type="checkbox" name="business_type" value="Restaurant" />
+          Restaurant</label
+        >
+        <label
+          ><input type="checkbox" name="business_type" value="Retail" />
+          Retail</label
+        >
+        <label
+          ><input type="checkbox" name="business_type" value="MO/TO" /> Mail
+          Order / Telephone Order</label
+        >
+        <label
+          ><input type="checkbox" name="business_type" value="E-Commerce" />
+          E-Commerce</label
+        >
+      </fieldset>
+
+      <!-- Retail section already included -->
+
+      <fieldset>
+        <legend>Restaurant Info</legend>
+        <label>Restaurant Specific Info (Processes, Needs, etc.)</label>
+        <textarea name="restaurant_info"></textarea>
+        <label>Please check all needed features:</label>
+        <label
+          ><input
+            type="checkbox"
+            name="restaurant_features"
+            value="Counter payments"
+          />
+          Take orders / handle payments from counter</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="restaurant_features"
+            value="Table payments"
+          />
+          Take orders / handle payments from table</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="restaurant_features"
+            value="Table/tab numbers"
+          />
+          Add table / tab numbers to ticket</label
+        >
+        <label
+          ><input type="checkbox" name="restaurant_features" value="KDS" /> Send
+          orders to a KDS</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="restaurant_features"
+            value="Kitchen tickets"
+          />
+          Print physical tickets to kitchen</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="restaurant_features"
+            value="Time tracking"
+          />
+          Track employee time</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="restaurant_features"
+            value="Customer rewards"
+          />
+          Manage customer rewards</label
+        >
+        <label>How many stationary terminals with cash drawers?</label>
+        <input type="number" name="restaurant_stationary_terminals" />
+        <label>How many mobile terminals (without cash drawers)?</label>
+        <input type="number" name="restaurant_mobile_terminals" />
+        <label>Order Workflow</label>
+        <label
+          ><input type="radio" name="restaurant_service_type" value="Table" />
+          Table service</label
+        >
+        <label
+          ><input type="radio" name="restaurant_service_type" value="Counter" />
+          Counter service</label
+        >
+        <label
+          ><input type="radio" name="restaurant_service_type" value="Both" />
+          Both</label
+        >
+        <label
+          >Do you need the ability to split checks or move items between
+          checks?</label
+        >
+        <label
+          ><input type="radio" name="restaurant_split_checks" value="Yes" />
+          Yes</label
+        >
+        <label
+          ><input type="radio" name="restaurant_split_checks" value="No" />
+          No</label
+        >
+        <label>Do staff take orders at the table with a mobile device?</label>
+        <label
+          ><input type="radio" name="restaurant_mobile_ordering" value="Yes" />
+          Yes</label
+        >
+        <label
+          ><input type="radio" name="restaurant_mobile_ordering" value="No" />
+          No</label
+        >
+        <label>Do you offer online ordering or pickup?</label>
+        <label
+          ><input
+            type="checkbox"
+            name="restaurant_online"
+            value="Online Ordering"
+          />
+          Online Ordering</label
+        >
+        <label
+          ><input type="checkbox" name="restaurant_online" value="Pickup" />
+          Pickup</label
+        >
+        <label>How are orders routed to the kitchen?</label>
+        <label
+          ><input type="radio" name="restaurant_kitchen_routing" value="KDS" />
+          KDS</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="restaurant_kitchen_routing"
+            value="Printed Tickets"
+          />
+          Printed Tickets</label
+        >
+        <label
+          ><input type="radio" name="restaurant_kitchen_routing" value="Both" />
+          Both</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="restaurant_kitchen_routing"
+            value="Other"
+          />
+          Other</label
+        >
+        <label
+          >Do you have separate prep stations needing individual
+          screens/printers?*</label
+        >
+        <label
+          ><input type="radio" name="restaurant_prep_stations" value="Yes" />
+          Yes</label
+        >
+        <label
+          ><input type="radio" name="restaurant_prep_stations" value="No" />
+          No</label
+        >
+        <label>If yes, how many screens and what should each show?</label>
+        <textarea name="restaurant_prep_screens"></textarea>
+        <label>Do you allow partial payments?</label>
+        <label
+          ><input type="radio" name="restaurant_partial_payments" value="Yes" />
+          Yes</label
+        >
+        <label
+          ><input type="radio" name="restaurant_partial_payments" value="No" />
+          No</label
+        >
+        <label
+          >Do servers carry handheld card readers or guests pay at
+          counter?</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="restaurant_payment_method"
+            value="Handheld"
+          />
+          Handheld card readers</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="restaurant_payment_method"
+            value="Counter"
+          />
+          Pay at counter</label
+        >
+        <label
+          ><input type="radio" name="restaurant_payment_method" value="Other" />
+          Other</label
+        >
+        <label>Do you want tip prompts for card payments?</label>
+        <label
+          ><input type="radio" name="restaurant_tip_prompts" value="Yes" />
+          Yes</label
+        >
+        <label
+          ><input type="radio" name="restaurant_tip_prompts" value="No" />
+          No</label
+        >
+        <label>How many staff at peak hours?</label>
+        <input type="number" name="restaurant_peak_staff" />
+        <label>Do staff need role-based permissions?</label>
+        <label
+          ><input type="radio" name="restaurant_roles_needed" value="Yes" />
+          Yes</label
+        >
+        <label
+          ><input type="radio" name="restaurant_roles_needed" value="No" />
+          No</label
+        >
+        <label>If yes, describe roles and permissions:</label>
+        <textarea name="restaurant_roles"></textarea>
+        <label>Will staff clock in/out from POS?</label>
+        <label
+          ><input type="radio" name="restaurant_clock" value="Yes" /> Yes</label
+        >
+        <label
+          ><input type="radio" name="restaurant_clock" value="No" /> No</label
+        >
+        <label
+          ><input type="radio" name="restaurant_clock" value="Maybe" />
+          Maybe</label
+        >
+        <label>Print guest receipts automatically or on request?</label>
+        <label
+          ><input
+            type="radio"
+            name="restaurant_receipts"
+            value="Automatically"
+          />
+          Automatically</label
+        >
+        <label
+          ><input type="radio" name="restaurant_receipts" value="On Request" />
+          On Request</label
+        >
+        <label>Which reports are most important to you?</label>
+        <label
+          ><input
+            type="checkbox"
+            name="restaurant_reports"
+            value="Sales by Item"
+          />
+          Sales by Item</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="restaurant_reports"
+            value="Sales by Employee"
+          />
+          Sales by Employee</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="restaurant_reports"
+            value="Labor vs. Sales"
+          />
+          Labor vs. Sales</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="restaurant_reports"
+            value="Voids/Discounts"
+          />
+          Voids/Discounts</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="restaurant_reports"
+            value="Daily Summary Reports"
+          />
+          Daily Summary Reports</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="restaurant_reports"
+            value="Inventory Tracking"
+          />
+          Inventory Tracking</label
+        >
+        <label
+          ><input
+            type="text"
+            name="restaurant_reports_other"
+            placeholder="Other:"
+        /></label>
+        <label>Will you require remote access?</label>
+        <label
+          ><input type="radio" name="restaurant_remote" value="Yes" />
+          Yes</label
+        >
+        <label
+          ><input type="radio" name="restaurant_remote" value="No" /> No</label
+        >
+        <label
+          ><input type="radio" name="restaurant_remote" value="Maybe" />
+          Maybe</label
+        >
+        <label>Describe your current POS daily process:</label>
+        <textarea name="restaurant_workflow"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>MO/TO Info</legend>
+        <label>MO/TO Specific info (Processes, needs, etc.)</label>
+        <textarea name="moto_info"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>E-Commerce Info</legend>
+        <label>E-Commerce Specific info (Processes, needs, etc.)</label>
+        <textarea name="ecommerce_info"></textarea>
+      </fieldset>
+
+      <button type="submit" class="submit-button">Submit</button>
+    </form>
+  </body>
+</html>
